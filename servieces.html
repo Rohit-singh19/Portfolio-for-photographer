@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container">
+      <div class="sidebar">
+         <div class="side-logo">
+            <img src="Images/logo.png" alt="Logo">
+            <div class="side-name">Rohit Singh</div>
+            <div class="side-prof">PHOTOGRAPHER</div>
+         </div>
+         <div class="side-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="servieces.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feed.html">Feedback</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+         </div> 
+         <div class="side-footer">
+           <div class="links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-500px"></i>
+           </div>
+           <p class="copyright">&#169; 2021 Rohit by Coding Buddies</p>
+         </div>
+      </div>
+
+      <!-- --------main---------------- -->
+      <div class="main">
+        <div class="toggle-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+          <header class="about-head padd" data-aos="fade-up">
+            <div class="side-prof prof">what we do</div>
+            <div class="side-name">Services</div>
+          </header>
+          
+          <section class="serv-gallery padd">
+              <div class="serv-img" data-aos="fade-up" data-aos-delay="50">
+                  <img src="Images/wedding-1.jpg" alt="">
+                  <i class="fas fa-camera"></i>
+                  <div class="type">Wedding Shoots</div>
+              </div>
+              <div class="serv-img" data-aos="fade-up" data-aos-delay="100">
+                  <img src="Images/portrait.jpg" alt="">
+                  <i class="fas fa-camera"></i>
+                  <div class="type">Portrait Photography</div>
+              </div>
+              <div class="serv-img" data-aos="fade-up" data-aos-delay="150">
+                  <img src="Images/travel.jpg" alt="">
+                  <i class="fas fa-camera"></i>
+                  <div class="type">Travel Photography</div>
+              </div>
+              <div class="serv-img" data-aos="fade-up" data-aos-delay="50">
+                  <img src="Images/product.jpg" alt="">
+                  <i class="fas fa-camera"></i>
+                  <div class="type">Portrait Photography</div>
+              </div>
+              <div class="serv-img" data-aos="fade-up" data-aos-delay="100">
+                  <img src="Images/fashion.jpg" alt="">
+                  <i class="fas fa-camera"></i>
+                  <div class="type">Fashion Photography</div>
+              </div>
+              <div class="serv-img" data-aos="fade-up" data-aos-delay="150">
+                  <img src="Images/sports.jpg" alt="">
+                  <i class="fas fa-camera"></i>
+                  <div class="type">Sports Photography</div>
+              </div>
+          </section>
+
+          <section class="interest" data-aos="fade-up">
+            <div class="about-head">
+                <div class="side-prof prof">INTERESTED TO WORK WITH US?</div>
+                <div class="btn">Contact With Us</div>
+              </div>
+          </section>
+
+          <section class="packages padd">
+            <div class="about-head" data-aos="fade-up">
+                <div class="side-prof prof">packages</div>
+                <div class="side-name">Pricing</div>
+            </div>
+            <div class="subscription">
+                <div class="sub" data-aos="fade-up" data-aos-delay="50"></div>
+                <div class="sub" data-aos="fade-up" data-aos-delay="100"></div>
+                <div class="sub" data-aos="fade-up" data-aos-delay="150"></div>
+            </div>
+          </section>
+          <footer>
+            <div class="logo-name">Rohit Singh</div>
+            <div class="prof">PHOTOGRAPHER</div>
+            <p class="copyright">&#169; 2021 Rohit by Coding Buddies</p>
+          </footer>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

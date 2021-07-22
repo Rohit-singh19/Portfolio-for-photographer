@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1000px) {
+    .toggle-menu{
+        display: block !important;
+    }
+    
+    .sidebar{
+        width: 0;
+        display: none;
+        transition: 1s !important;
+    }
+    .contact-detail{
+        min-width: 100% !important;
+        margin-bottom: 1.5rem;
+    }
+    .serv-gallery{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr)) !important;
+    }
+    .subscription{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr)) !important;
+    }
+}

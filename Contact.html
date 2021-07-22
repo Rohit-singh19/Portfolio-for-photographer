@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container">
+      <div class="sidebar">
+         <div class="side-logo">
+            <img src="Images/logo.png" alt="Logo">
+            <div class="side-name">Rohit Singh</div>
+            <div class="side-prof">PHOTOGRAPHER</div>
+         </div>
+         <div class="side-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="servieces.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feed.html">Feedback</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+         </div> 
+         <div class="side-footer">
+           <div class="links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-500px"></i>
+           </div>
+           <p class="copyright">&#169; 2021 Rohit by Coding Buddies</p>
+         </div>
+      </div>
+
+      <!-- --------main---------------- -->
+      <div class="main">
+        <div class="toggle-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+          <header class="about-head padd" data-aos="fade-up">
+            <div class="side-prof prof">Location</div>
+            <div class="side-name">Contact Us</div>
+          </header>
+          
+          <section class="map padd" data-aos="fade-up">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112056.99679282683!2d77.20108667428859!3d28.636320552646087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1626690652377!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </section>
+
+          <section class="contact padd">
+            <div class="contact-detail" data-aos="fade-up">
+                <h3>I'm available for worldwide orders.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore iste quo sit sunt, eius doloremque est consequuntur dolor optio iure quasi a veritatis nostrum, deserunt in cum omnis quae fugit.</p>
+                <p><span>Phone:</span> +91 1234-5678-90</p>
+                <p><span>Email:</span> rohitsingh@gmail.com</p>
+                <p><span>Address:</span> 310, South Delhi, New Delhi, India</p>
+            </div>
+            <div class="contact-form" data-aos="fade-up">
+                <div class="side-name">Contact Form</div>
+                <p>Intersted to work with us?</p>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                </form>
+                <div class="btn">Submit</div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="logo-name">Rohit Singh</div>
+            <div class="prof">PHOTOGRAPHER</div>
+            <p class="copyright">&#169; 2021 Rohit by Coding Buddies</p>
+          </footer>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
