@@ -2,7 +2,9 @@
     .toggle-menu{
         display: block !important;
     }
-    
+    .padd{
+        padding: 0 .5rem;
+    }
     .sidebar{
         width: 0;
         display: none;
@@ -17,5 +19,13 @@
     }
     .subscription{
         grid-template-columns: repeat(auto-fit, minmax(250px,1fr)) !important;
+    }
+    .user-img, .input-userimg{
+        width: 15vw !important;
+        height: 15vw !important;
+    }
+    .contact-detail,
+    .contact-form{
+        width: 100% !important;
     }
 }
