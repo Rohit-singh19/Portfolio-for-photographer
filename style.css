@@ -518,7 +518,7 @@ footer{
 .user-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .user-detail{
@@ -550,7 +550,7 @@ footer{
 }
 
 .feedform .form{
-    min-width: 80%;
+    max-width: 80%;
 }
 
 .feedform .form input, .feedform .form textarea{
@@ -616,7 +616,7 @@ footer{
 }
 .contact-detail{
     width: 50%;
-    min-width: 800px;
+    /* min-width: 800px; */
     height: auto;
 }
 
