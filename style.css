@@ -560,6 +560,10 @@ footer{
 .user-img img{
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
+=======
+    /* object-fit: cover; */
+>>>>>>> 1e7aae263826851692c7ff554664e2a738f0b600
 }
 .user-detail{
     width: 90%;
@@ -592,8 +596,16 @@ footer{
     margin-top: 2rem;
 }
 
+<<<<<<< HEAD
 .feedform .form input,
 .feedform .form textarea{
+=======
+.feedform .form{
+    max-width: 80%;
+}
+
+.feedform .form input, .feedform .form textarea{
+>>>>>>> 1e7aae263826851692c7ff554664e2a738f0b600
     width: 100%;
     padding: 1rem;
     outline: 0;
@@ -654,6 +666,10 @@ footer{
 
 .contact-detail{
     width: 50%;
+<<<<<<< HEAD
+=======
+    /* min-width: 800px; */
+>>>>>>> 1e7aae263826851692c7ff554664e2a738f0b600
     height: auto;
 }
 
@@ -711,4 +727,44 @@ form textarea{
 
 /* ----------------contact END---------------------- */
 
+<<<<<<< HEAD
 /* ---------------main END-------------------------- */
+=======
+
+/* -------------------Contact END-------------------- */
+
+
+.toggle-menu{
+    position: fixed;
+    /* width: 2rem;
+    height: 2rem; */
+    background-color: var(--black1);
+    top: 10%;
+    left: -1%;
+    /* left: 30%; */
+    /* border-radius: 50%; */
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    display: none;
+    transition: 1s;
+    /* transform: translateX(30%); */
+    z-index: 1000;
+}
+
+.show{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 60%;
+    display: block;
+    z-index: 1000;
+}
+
+.margin{
+    left: 60%;
+}
+>>>>>>> 1e7aae263826851692c7ff554664e2a738f0b600
