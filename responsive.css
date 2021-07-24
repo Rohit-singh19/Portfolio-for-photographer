@@ -1,8 +1,11 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width : 1000px) {
     .toggle-menu{
         display: block !important;
     }
-    
+    .padd{
+        padding: 0 .5rem;
+    }
+
     .sidebar{
         width: 0;
         display: none;
@@ -12,10 +15,11 @@
         min-width: 100% !important;
         margin-bottom: 1.5rem;
     }
-    .serv-gallery{
-        grid-template-columns: repeat(auto-fit, minmax(250px,1fr)) !important;
+
+    .contact-form{
+        width: 100% !important;
     }
-    .subscription{
-        grid-template-columns: repeat(auto-fit, minmax(250px,1fr)) !important;
+    .contact-form textarea{
+        width: 100%;
     }
 }

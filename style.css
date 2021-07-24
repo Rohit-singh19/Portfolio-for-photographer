@@ -1,6 +1,5 @@
 @import url(responsive.css);
 
-
 *{
     margin: 0;
     padding: 0;
@@ -8,43 +7,39 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/* ---------------variables----------------- */
 
-/* --------------------var----------------- */
 :root{
     --black1 : #101010;
-    --black2: #777777;
-/* -----------fontsizes-------------- */
+    --black2 : #777777;
 
-    --logo-f:30px;
-    --logo-p:12px;
+    /* ---------------font size------------------ */
 
-    /* ----------width---------- */
-    --width:23%;
+    --logo-f : 30px;
+    --logo-p : 12px;
+
+    /* ----------------width-------------------------- */
+
+    --width : 23%;
 }
-
-/* ------------sideBar--------------- */
 
 .container{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    /* position: relative; */
     justify-content: center;
 }
 
+/* ---------------------sideBar START-------------------- */
+
 .sidebar{
     width: var(--width);
-    /* height: 100%; */
-    /* background-color: black; */
     padding: 30px;
     position: sticky;
     top: 0;
-    /* left: 0; */
     height: 100vh;
-    box-shadow: 0 5px 4px rgba(0,0,0,0.6);
-    /* overflow: hidden; */
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.6);
     background-color: white;
-    /* transition: 1s; */
 }
 
 .side-logo{
@@ -60,10 +55,7 @@
     width: 70%;
     height: auto;
 }
-.main{
-    width: 77%;
-    height: auto;
-}
+
 .side-name{
     font-size: var(--logo-f);
     font-weight: 800;
@@ -81,7 +73,6 @@
     width: 100%;
     margin-top: 2rem;
 }
-
 .side-menu ul li{
     list-style: none;
     width: 100%;
@@ -94,7 +85,6 @@
 .side-menu ul li a.active{
     color: var(--black1);
 }
-
 
 .side-menu ul li a{
     text-decoration: none;
@@ -110,6 +100,7 @@
     align-items: center;
     flex-direction: column;
 }
+
 .links i{
     font-size: 16px;
     margin: .5rem;
@@ -120,16 +111,52 @@
     text-align: center;
 }
 
-/* -------------side-bar ENd--------------- */
 
-/* -------------main-start--------------------- */
+/* ---------------------sideBar END-------------------- */
+
+/* ---------------main START-------------------------- */
+
 .main{
-    /* margin-left: var(--width); */
+    width: 77%;
+    height: auto;
     min-width: 77%;
     max-width: 100%;
 }
 
-/* --------hero---------------- */
+
+/* ----------------------Toggle MENU START---------------------- */
+.toggle-menu{
+    
+    position: fixed;
+    background-color: var(--black1);
+    top: 10%;
+    left: -1%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: 1s;
+    display: none;
+    z-index: 1000;
+}
+
+.show{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 60%;
+    display: block;
+    z-index: 1000;
+}
+
+.margin{
+    left: 60%;
+}
+/* ----------------------Toggle MENU END---------------------- */
+
+/* ----------------------hero START----------------- */
 
 .hero{
     width: 100%;
@@ -146,12 +173,13 @@
 }
 
 #hero-name{
-    font-size: 6rem;
+    font-size: 10vw;
     font-weight: 800;
     padding: 2rem 2rem 1rem;
-    color:white;
+    color: white;
     transition: .5s;
     position: relative;
+    text-align : center;
 }
 
 #hero-name span{
@@ -160,47 +188,47 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-color: white; 
-    /* border-style: solid; */
+    border-color: white;
 }
 
-#hero-name::before, 
+#hero-name::before,
 #hero-name::after,
 #hero-name span::before,
 #hero-name span::after{
     position: absolute;
-    width: 3rem; 
+    width: 3rem;
     height: 2.8rem;
-    border-color: white; 
+    border-color: white;
     border-style: solid;
-    content: ' ';
+    content: '';
 }
 
-#hero-name::before {
+#hero-name::before{
     top: 0;
     left: 0;
     border-width: .5rem 0 0 .5rem;
 }
 
-#hero-name::after {
+#hero-name::after{
     bottom: 0;
     right: 0;
-    border-width:  0 .5rem .5rem 0;
+    border-width: 0 .5rem .5rem 0;
 }
 
-#hero-name span::before {
-    right: 0;     
+#hero-name span::before{
+    right: 0;
     border-width: .5rem .5rem 0 0;
 }
 
-#hero-name span::after {
+#hero-name span::after{
     bottom: 0;
     left: 0;
     border-width: 0 0 .5rem .5rem;
 }
 
+/* ----------------------hero END----------------- */
 
-/* ----------quotes--------------- */
+/* -----------------quotes START------------------- */
 
 .quotes{
     padding: 1rem;
@@ -210,22 +238,23 @@
 
 .quote{
     max-width: 640px;
-    margin: 2rem auto .5em auto;
+    margin: 2rem auto .5rem auto;
     font-size: 20px;
     color: var(--black2);
     line-height: 1.5rem;
 }
 
-.quotes img{
+.quote img{
     width: auto;
 }
+/* -----------------quotes END------------------- */
 
-/* ----------gallery---------------- */
+/* --------------gallery START------------------------------ */
 
 .gallery{
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     object-fit: cover;
     margin-bottom: 2rem;
@@ -236,12 +265,12 @@
     height: 100%;
 }
 
+/* --------------gallery END------------------------------ */
 
-/* -----------------footer------------ */
-
+/* -----------footer START--------------------- */
 footer{
     width: 100%;
-    padding: 4.5rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,24 +284,25 @@ footer{
     margin-bottom: .5rem;
     color: white;
 }
-
 .prof{
     font-size: var(--logo-p);
     color: var(--black2);
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
 }
+/* -----------footer END--------------------- */
 
-/* --------------mainEND-------------- */
+/* --------------------------for About START------------------------- */
 
-/* -----------------about-------------------- */
 .padd{
     padding: 0 1rem;
 }
+
 .about-head{
     padding: 6.3rem 0 2rem;
     text-align: center;
 }
+
 
 .prof{
     margin-bottom: 1rem;
@@ -281,17 +311,21 @@ footer{
 .profile{
     width: 100%;
     height: 60vh;
-    /* background-color: blue; */
     margin-bottom: 2rem;
 }
+
 .profile img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+/* --------------------------About END------------------------- */
+
+
 .bio .side-name{
     margin-bottom: 1.3rem;
 }
+
 
 .bio p{
     font-size: 1rem;
@@ -301,14 +335,16 @@ footer{
     line-height: 1.5rem;
 }
 
-/* ----------porf-team----------------- */
+
+/* -----------------------profession team---------------------------- */
 
 .prof-img-gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     margin-bottom: 2rem;
 }
+
 .prof-img{
     position: relative;
 }
@@ -320,26 +356,25 @@ footer{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .prof-img:hover .pro-name{
-    top: 10%; 
+    top: 10%;
     opacity: 1;
 }
-
 .prof-img:hover .pro-prof{
-    top: 15%; 
+    top: 15%;
+    opacity: 1;
+}
+.prof-img:hover .links{
+    top: 20%;
     opacity: 1;
 }
 
-.prof-img:hover .links{
-    opacity: 1;
-    top: 20%;
-}
 
 .prof-img img{
     width: 100%;
     height: 100%;
 }
+
 .prof-img > div{
     position: absolute;
     left: 10%;
@@ -350,7 +385,6 @@ footer{
     font-size: 20px;
     color: white;
     font-weight: 800;
-    /* top: 10%; */
     top: 5%;
     opacity: 0;
 }
@@ -359,7 +393,6 @@ footer{
     font-size: 14px;
     color: white;
     font-weight: 400;
-    /* top: 15%; */
     top: 20%;
     opacity: 0;
 }
@@ -367,15 +400,13 @@ footer{
     top: 22%;
     opacity: 0;
 }
+
 .prof-img .links i{
     color: white;
     cursor: pointer;
 }
 
-/* ----------aboutEND------------- */
-
-/* ----------services-start-------------- */
-
+/* ---------------------------services START-------------------- */
 .serv-gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
@@ -388,11 +419,9 @@ footer{
     height: 100%;
     position: relative;
 }
-
 .serv-img img{
     width: 100%;
     height: 100%;
-    /* z-index: -1; */
 }
 
 .serv-img i{
@@ -401,7 +430,6 @@ footer{
     left: 10%;
     color: white;
     font-size: 3rem;
-    /* z-index: 1000; */
 }
 
 .serv-img .type{
@@ -412,7 +440,6 @@ footer{
     font-size: 20px;
     font-weight: 800;
 }
-
 .btn{
     width: fit-content;
     margin: auto;
@@ -426,11 +453,18 @@ footer{
 .btn:hover{
     color: white;
 }
+
+
 .subscription{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 1rem;
     margin-bottom: 3rem;
+}
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sub:first-child{
     background-image: url(Images/sub1.jpg);
@@ -457,10 +491,16 @@ footer{
     height: 40vh;
 }
 
-/* --------------servicesEND----------------- */
+.sub h2{
+    font-size: 2rem;
+    color: var(--black2);
+}
 
-/* ---------------gallerySTART----------------------- */
 
+/* ---------------------------services END-------------------- */
+
+
+/* -------------gallery START-------------------- */
 .vid{
     width: 100%;
     height: 100%;
@@ -482,9 +522,10 @@ footer{
     font-weight: 800;
 }
 
-/* ---------------galleryEND----------------------- */
-/* --------------feedSTART------------------- */
+/* -------------gallery END-------------------- */
 
+
+/* ------------------------feed START-------------------- */
 .feed-container{
     margin-bottom: 3rem;
 }
@@ -505,7 +546,7 @@ footer{
     margin-bottom: 2rem;
 }
 
-.leavefeed{
+.feed-head{
     margin-bottom: 3rem;
 }
 
@@ -515,14 +556,13 @@ footer{
     border-radius: 50%;
     overflow: hidden;
 }
+
 .user-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
-
 .user-detail{
-    width: 95%;
+    width: 90%;
     margin-left: 40px;
 }
 
@@ -535,29 +575,29 @@ footer{
     font-size: var(--logo-p);
     margin: .5rem 0 1rem;
 }
-
 .user-detail .review{
     font-size: 1rem;
     color: var(--black2);
     line-height: 1.3rem;
 }
 
+.leavefeed{
+    margin-bottom: 2rem;
+}
+
 .feedform{
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-start;
     margin-top: 2rem;
 }
 
-.feedform .form{
-    min-width: 80%;
-}
-
-.feedform .form input, .feedform .form textarea{
+.feedform .form input,
+.feedform .form textarea{
     width: 100%;
     padding: 1rem;
-    outline: none;
-    background-color: #f7f7f7;
+    outline: 0;
+    background-color: #f7F7f7f7;
     border: none;
     margin-bottom: 1rem;
     font-size: 1.2rem;
@@ -566,7 +606,6 @@ footer{
 .input-userimg{
     position: relative;
     border-radius: 50%;
-    /* border: 2px solid red; */
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -596,9 +635,9 @@ footer{
 .form .btn{
     margin: 0;
 }
-/* --------------feedEND------------------- */
-/* -------------------Contact START-------------------- */
+/* ------------------------feed END-------------------- */
 
+/* ----------------contact START---------------------- */
 .map{
     width: 100%;
     height: 40vh;
@@ -609,14 +648,12 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* flex-basis: 50%; */
     flex-wrap: wrap;
     margin-bottom: 3rem;
 }
+
 .contact-detail{
     width: 50%;
-    min-width: 800px;
     height: auto;
 }
 
@@ -633,15 +670,17 @@ footer{
 
 .contact-detail p span{
     color: var(--black1);
-    font-weight: 800;
+    font-size: 800;
 }
 
 .contact-form{
     width: calc(50% - 1rem);
     display: flex;
-    /* justify-content: flex-start; */
-    
     flex-flow: column nowrap;
+}
+
+form textarea{
+    width: 100%;
 }
 
 .contact-form .side-name{
@@ -666,49 +705,10 @@ footer{
     font-size: 1.2rem;
 }
 
-.contact-form form textarea{
-    width: 100%;
-}
-
 .contact-form .btn{
     margin: 0;
 }
 
+/* ----------------contact END---------------------- */
 
-
-/* -------------------Contact END-------------------- */
-
-
-.toggle-menu{
-    position: fixed;
-    /* width: 2rem;
-    height: 2rem; */
-    background-color: var(--black1);
-    top: 10%;
-    left: -1%;
-    /* left: 30%; */
-    /* border-radius: 50%; */
-    padding: 1rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    display: none;
-    transition: 1s;
-    /* transform: translateX(30%); */
-    z-index: 1000;
-}
-
-.show{
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 60%;
-    display: block;
-    z-index: 1000;
-}
-
-.margin{
-    left: 60%;
-}
+/* ---------------main END-------------------------- */
